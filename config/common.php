@@ -2,4 +2,8 @@
 
 declare(strict_types=1);
 
-return [];
+use Yiisoft\Yii\Queue\Queue;
+
+return [
+//    Queue::class => new
+];
