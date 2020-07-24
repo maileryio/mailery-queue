@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-use Yiisoft\Yii\Queue\Queue;
+use Yiisoft\Yii\Queue\Driver\DriverInterface;
+use Yiisoft\Yii\Queue\Driver\SynchronousDriver;
 
 return [
-//    Queue::class => new
+    DriverInterface::class => SynchronousDriver::class,
 ];
